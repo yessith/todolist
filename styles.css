@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+/*  */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.7rem;
+  color: #ffffff;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  position: relative;
+  background-color: #35363d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+a, button, li {
+  cursor: pointer;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.book {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-header {
+  margin: 20px 0 50px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.book-header__title {
+  font-size: 3.2rem;
+}
+
+.book-header__current__date {
+  font-size: 1.8rem;
+}
+
+/* STYLES SECTION BOOK BODY */
+
+.book-body {
+  max-width: 450px;
+  background-color: #24292b;
+  padding: 8px;
+}
+
+.book-body__head {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.book-body__new__task__label {
+  width: 300px;
+}
+
+.book-body__title {
+  font-size: 2.4rem;
+}
+
+.book-body__new__task {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #4e03fc;
+  border-radius: 5px;
+  height: 50px;
+  align-items: center;
+  padding: 8px;
+  background-color: #4e03fc;
+}
+
+.book-body__new__task__input {
+  width: 90%;
+  height: 35px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.book-body__new__task__btn {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  padding: 0 6px;
+}
+
+.book-body__new__task__btn__ico__line, .book-body__new__task__btn__ico__line::before {
+  height: 2px;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.book-body__new__task__btn__ico__line::before {
+  content: '';
+  transform: rotate(90deg);
+}
+
+.book-body__title {
+  margin: 20px 0 50px;
+}
+
+.book-body__list__items {
+  position: relative;
+  background-color: #4e03fc;
+  height: 60px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: inset 0 -2px rgba(255, 255, 255, 0.5);
+}
+
+.delete-btn {
+  position: absolute;
+  right: 10px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.completed {
+  text-decoration: line-through;
+  background-color: #28a745;
+}
+
+@media only screen and (min-width: 500px) {
+  .book {
+    padding: 0;
+  }
+}

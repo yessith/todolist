@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="" />
+    <title>To Do List</title>
+    <link rel="canonical" content="" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main class="book">
+      <section class="book-header">
+        <h1 class="book-header__title">To Do List</h1>
+        <span class="book-header__current__date" id="date"></span>
+      </section>
+      <section class="book-body">
+        <div class="book-body__head">
+          <label class="book-body__new__task__label" for="task">Agregar Nueva Tarea</label>
+          <div class="book-body__new__task">
+            <input class="book-body__new__task__input" type="text" id="task" name="task" />
+            <button class="book-body__new__task__btn" id="btn_add_task">
+              <div class="book-body__new__task__btn__ico">
+                <span class="book-body__new__task__btn__ico__line"></span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="book-body__box">
+          <h2 class="book-body__title">Lista De Tareas</h2>
+          <ul class="book-body__list" id="list_task"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
